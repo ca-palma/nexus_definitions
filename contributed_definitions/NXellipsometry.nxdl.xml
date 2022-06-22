@@ -41,23 +41,23 @@
     </symbols>
     <doc>
          Ellipsometry, complex systems, up to variable angle spectroscopy.
-         
+
          Information on ellipsometry is provided, e.g. in:
-         
+
          * H. Fujiwara, Spectroscopic ellipsometry: principles and applications,
            John Wiley &amp; Sons, 2007.
          * R. M. A. Azzam and N. M. Bashara, Ellipsometry and Polarized Light,
            North-Holland Publishing Company, 1977.
          * H. G. Tompkins and E. A. Irene, Handbook of Ellipsometry,
            William Andrew, 2005.
-         
+
          Open access sources:
-         
+
          * https://www.angstromadvanced.com/resource.asp
          * https://pypolar.readthedocs.io/en/latest/
-         
+
          Review articles:
-         
+
          * T. E. Jenkins, &quot;Multiple-angle-of-incidence ellipsometry&quot;,
            J. Phys. D: Appl. Phys. 32, R45 (1999),
            https://doi.org/10.1088/0022-3727/32/9/201
@@ -78,13 +78,13 @@
     <group type="NXentry">
         <doc>
              This is the application definition describing ellipsometry experiments.
-             
+
              Such experiments may be as simple as identifying how a reflected
              beam of light with a single wavelength changes its polarization state,
              to a variable angle spectroscopic ellipsometry experiment.
-             
+
              The application definition defines:
-             
+
              * elements of the experimental instrument
              * calibration information if available
              * parameters used to tune the state of the sample
@@ -336,7 +336,7 @@
                              accessible. Historically, energy is used in eV, but for visible
                              spectroscopy wavelength is more common, for IR wave numbers in
                              1/cm units.
-                             
+
                              Possibly use the same type of data as for the measurement.
                         </doc>
                         <dimensions rank="1">
