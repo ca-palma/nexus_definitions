@@ -272,11 +272,9 @@
             </field>
             <field name="atom_types" recommended="true" type="NX_CHAR">
                 <doc>
-                     Use Hill's system for listing existing elements of periodic table which are
-                     inside or attached to the surface of the specimen and thus relevant from a
-                     scientific point. The purpose of this field is to allow material databases to
-                     parse the relevant elements without having to interpret the sample history or
-                     other fields.
+                    List of comma-separated elements from the periodic table that make up 
+                    `chemical_formula`. If the sample substance has different components, all 
+                    different types of elements from the components must be included in `atom_types`. 
                 </doc>
             </field>
             <group name="sample_history" recommended="true" type="NXnote">
