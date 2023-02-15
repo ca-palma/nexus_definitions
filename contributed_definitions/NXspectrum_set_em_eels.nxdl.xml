@@ -68,22 +68,19 @@
              Collected EELS spectra for all pixels of a rectangular region-of-interest.
              This representation supports rectangular scan pattern.
         </doc>
-        <field name="data_counts" type="NX_NUMBER" units="NX_UNITLESS">
-            <doc>
-                 Counts for one spectrum per each pixel.
-            </doc>
+        <field name="counts" type="NX_NUMBER" units="NX_UNITLESS">
             <dimensions rank="3">
                 <dim index="1" value="n_y"/>
                 <dim index="2" value="n_x"/>
                 <dim index="3" value="n_energy_loss"/>
             </dimensions>
-            <attribute name="long_name" type="NX_CHAR">
-                <doc>
-                     EELS counts
-                </doc>
-            </attribute>
         </field>
-        <field name="axis_y" type="NX_NUMBER" units="NX_LENGTH">
+        <attribute name="long_name">
+            <doc>
+                 EELS counts
+            </doc>
+        </attribute>
+        <field name="ypos" type="NX_NUMBER" units="NX_LENGTH">
             <doc>
                  Pixel center of mass position y-coordinates.
             </doc>
@@ -92,11 +89,11 @@
             </dimensions>
             <attribute name="long_name" type="NX_CHAR">
                 <doc>
-                     Coordinate along y direction.
+                     Label for the y axis.
                 </doc>
             </attribute>
         </field>
-        <field name="axis_x" type="NX_NUMBER" units="NX_LENGTH">
+        <field name="xpos" type="NX_NUMBER" units="NX_LENGTH">
             <doc>
                  Pixel center of mass position x-coordinates.
             </doc>
@@ -105,11 +102,11 @@
             </dimensions>
             <attribute name="long_name" type="NX_CHAR">
                 <doc>
-                     Coordinate along x direction.
+                     Label for the x axis.
                 </doc>
             </attribute>
         </field>
-        <field name="axis_energy_loss" type="NX_NUMBER" units="NX_ENERGY">
+        <field name="energy_loss" type="NX_NUMBER" units="NX_ENERGY">
             <doc>
                  Pixel center of mass energy loss bins.
             </doc>
@@ -118,30 +115,30 @@
             </dimensions>
             <attribute name="long_name" type="NX_CHAR">
                 <doc>
-                     Coordinate along energy loss axis.
+                     Label for the energy loss axis.
                 </doc>
             </attribute>
         </field>
     </group>
     <group name="summary" type="NXdata">
         <doc>
-             Accumulated EELS spectrum over all pixels of a rectangular
-             region-of-interest. This representation supports rectangular scan pattern.
+             Accumulated EELS spectrum over all pixels of a rectangular region-of-interest.
+             This representation supports rectangular scan pattern.
         </doc>
-        <field name="data_counts" type="NX_NUMBER" units="NX_UNITLESS">
+        <field name="counts" type="NX_NUMBER" units="NX_UNITLESS">
             <doc>
                  Counts for specific energy losses.
             </doc>
             <dimensions rank="1">
                 <dim index="1" value="n_energy_loss"/>
             </dimensions>
-            <attribute name="long_name" type="NX_CHAR">
-                <doc>
-                     Counts electrons with an energy loss within binned range.
-                </doc>
-            </attribute>
         </field>
-        <field name="axis_energy_loss" type="NX_NUMBER" units="NX_ENERGY">
+        <attribute name="long_name">
+            <doc>
+                 Counts electrons with an energy loss within binned range.
+            </doc>
+        </attribute>
+        <field name="energy_loss" type="NX_NUMBER" units="NX_ENERGY">
             <doc>
                  Pixel center of mass energy loss bins.
             </doc>
@@ -150,7 +147,7 @@
             </dimensions>
             <attribute name="long_name" type="NX_CHAR">
                 <doc>
-                     Coordinate along energy loss axis.
+                     Energy loss
                 </doc>
             </attribute>
         </field>
